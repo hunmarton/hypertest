@@ -6,7 +6,7 @@
   "scripts": {
     "buildcss": "cd scripts && gulp buildcss",
     "buildjs": "cd scripts && gulp buildjs",
-    "buildfull":"cd scripts && gulp build"
+    "buildfull":"cd scripts && npm install && gulp build"
   },
   "author": "",
   "license": "ISC"
