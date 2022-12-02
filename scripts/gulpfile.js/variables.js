@@ -11,7 +11,7 @@ const AVAILABLE_DEMOS = ['saas','modern','creative'];
 
 var FOLDER_PATHS = {
     baseSrc: "src/", // source files
-    baseDist: "dist/", // build files
+    baseDist: "../docs/", // build files
     baseAssets: "src/assets/", // base assets
 };
 
@@ -22,7 +22,7 @@ function getSrcFolderPath() {
 }
 
 function getDistFolderPath() {
-    return FOLDER_PATHS.baseDist + selectedDemo + "/";
+    return FOLDER_PATHS.baseDist  + "/";
 }
 
 function getDistAssetFolderPath() {
