@@ -6,6 +6,7 @@ var gulp = require("gulp"),
     rename = require("gulp-rename"),
     vars = require('../variables');
 
+
 // compile and concate js
 const compileJs = function () {
     const out = vars.getDistAssetsPath() + "js/";

@@ -29,6 +29,10 @@ function getDistAssetFolderPath() {
     return getDistFolderPath(selectedDemo) + "assets/";
 }
 
+// function getBasePath() {
+//     return __basedir
+// }
+
 module.exports = {
     getSelectedDemo: function () { return selectedDemo },
     getBaseSrcPath: function () { return FOLDER_PATHS.baseSrc },

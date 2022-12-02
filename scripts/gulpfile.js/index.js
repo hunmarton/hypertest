@@ -65,11 +65,11 @@ function watchFiles() {
 gulp.task("watch", gulp.parallel(watchFiles, initBrowserSync));
 
 // default
-// gulp.task('default', gulp.series('copyAssets', 'copyHtml', 'copyImages', 'copyFonts', 'compileSaas', 'compileJs', 'watch'), function (done) { done(); });
+gulp.task('default', gulp.series('copyAssets', 'copyHtml', 'copyImages', 'copyFonts', 'compileSaas', 'compileJs', 'watch'), function (done) { done(); });
 
 
 // build
-// gulp.task("build", gulp.series('copyAssets', 'copyFonts', 'compileSaas', 'compileJs'));
+gulp.task("build", gulp.series('copyAssets', 'copyFonts', 'compileSaas', 'compileJs'));
 
 //build css
 gulp.task("buildcss",gulp.series('compileSaas'));
