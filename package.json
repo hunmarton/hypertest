@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "buildcss": "cd scripts && gulp buildcss",
-    "buildjs": "cd scripts && gulp buildjs"
+    "buildjs": "cd scripts && gulp buildjs",
+    "buildfull":"cd scripts && gulp build"
   },
   "author": "",
   "license": "ISC"

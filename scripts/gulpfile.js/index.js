@@ -69,7 +69,7 @@ gulp.task('default', gulp.series('copyAssets', 'copyHtml', 'copyImages', 'copyFo
 
 
 // build
-gulp.task("build", gulp.series('copyAssets', 'copyFonts', 'compileSaas', 'compileJs'));
+gulp.task("build", gulp.series('copyAssets', 'copyHtml', 'copyImages', 'copyFonts', 'compileSaas', 'compileJs'));
 
 //build css
 gulp.task("buildcss",gulp.series('compileSaas'));
