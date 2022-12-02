@@ -1,0 +1,12 @@
+{
+  "name": "sabeeapptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "cd scripts && gulp buildcss",
+    "buildjs": "cd scripts && gulp buildjs"
+  },
+  "author": "",
+  "license": "ISC"
+}
