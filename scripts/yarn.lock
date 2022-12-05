@@ -3359,9 +3359,8 @@
     "plugin-error" "^1.0.1"
     "through2" "^2.0.3"
 
-"gulp-hub@frankwallis/gulp-hub#4.0":
-  "integrity" "sha512-7f8S/zmxUiT58F3Sf7L24akmEktmTb8x6V98/GEiLhGx4rTC78oNlSpNxfvg8x10Paxcq4UD/Jf8Xz21NRPysQ=="
-  "resolved" "https://codeload.github.com/frankwallis/gulp-hub/tar.gz/f94d00c0e71339386cfce076d4825fac00ebd43c"
+"gulp-hub@github:frankwallis/gulp-hub#4.0":
+  "resolved" "git+ssh://git@github.com/frankwallis/gulp-hub.git#f94d00c0e71339386cfce076d4825fac00ebd43c"
   "version" "4.2.0"
   dependencies:
     "ansi-colors" "^1.0.1"
