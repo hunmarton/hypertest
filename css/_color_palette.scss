@@ -1,0 +1,40 @@
+
+/* Color palette export */
+
+$colorList: (
+    "blues":       $blues,
+    "indigos":     $indigos,
+    "purples":     $purples,
+    "pinks":       $pinks,
+    "reds":        $reds,
+    "oranges":     $oranges,
+    "yellows":     $yellows,
+    "greens":      $greens,
+    "teals":       $teals,
+    "cyans":       $cyans
+);
+
+.card[data-color] ul > li {
+    text-align: center !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+:root{
+
+    @each $colorsName, $colors in $colorList {
+
+        @each $colorName, $colorValue in $colors {
+            --color-#{$colorName}: #{$colorValue};
+        }
+    }
+
+    @each $colorName, $colorValue in $grays {
+        --color-gray-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $theme-colors {
+        --color-theme-#{$colorName}: #{$colorValue};	
+    }
+}

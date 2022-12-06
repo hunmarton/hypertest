@@ -6,6 +6,125 @@ Author: CoderThemes
 Email: support@coderthemes.com
 File: Main Css File
 */
+/* Custom brand colors */
+/* Color palette export */
+.card[data-color] ul > li {
+  text-align: center !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+:root {
+  --color-blue-100: #d5e8fe;
+  --color-blue-200: #abd2fc;
+  --color-blue-300: #80bbfb;
+  --color-blue-400: #56a5f9;
+  --color-blue-500: #2c8ef8;
+  --color-blue-600: #2372c6;
+  --color-blue-700: #1a5595;
+  --color-blue-800: #123963;
+  --color-blue-900: #091c32;
+  --color-indigo-100: #e3e5fd;
+  --color-indigo-200: #c7cbfb;
+  --color-indigo-300: #aab0f9;
+  --color-indigo-400: #8e96f7;
+  --color-indigo-500: #727cf5;
+  --color-indigo-600: #5b63c4;
+  --color-indigo-700: #444a93;
+  --color-indigo-800: #2e3262;
+  --color-indigo-900: #171931;
+  --color-purple-100: #e1dfef;
+  --color-purple-200: #c4bfdf;
+  --color-purple-300: #a69ece;
+  --color-purple-400: #897ebe;
+  --color-purple-500: #6b5eae;
+  --color-purple-600: #564b8b;
+  --color-purple-700: #403868;
+  --color-purple-800: #2b2646;
+  --color-purple-900: #151323;
+  --color-pink-100: #ffe1eb;
+  --color-pink-200: #ffc2d7;
+  --color-pink-300: #ffa4c3;
+  --color-pink-400: #ff85af;
+  --color-pink-500: #ff679b;
+  --color-pink-600: #cc527c;
+  --color-pink-700: #993e5d;
+  --color-pink-800: #66293e;
+  --color-pink-900: #33151f;
+  --color-red-100: #fedee5;
+  --color-red-200: #fdbecb;
+  --color-red-300: #fc9db0;
+  --color-red-400: #fb7d96;
+  --color-red-500: #fa5c7c;
+  --color-red-600: #c84a63;
+  --color-red-700: #96374a;
+  --color-red-800: #642532;
+  --color-red-900: #321219;
+  --color-orange-100: #ffe5d0;
+  --color-orange-200: #fecba1;
+  --color-orange-300: #feb272;
+  --color-orange-400: #fd9843;
+  --color-orange-500: #fd7e14;
+  --color-orange-600: #ca6510;
+  --color-orange-700: #984c0c;
+  --color-orange-800: #653208;
+  --color-orange-900: #331904;
+  --color-yellow-100: #fff2cc;
+  --color-yellow-200: #ffe499;
+  --color-yellow-300: #ffd766;
+  --color-yellow-400: #ffc933;
+  --color-yellow-500: #ffbc00;
+  --color-yellow-600: #cc9600;
+  --color-yellow-700: #997100;
+  --color-yellow-800: #664b00;
+  --color-yellow-900: #332600;
+  --color-green-100: #cef5ea;
+  --color-green-200: #9decd5;
+  --color-green-300: #6ce2c1;
+  --color-green-400: #3bd9ac;
+  --color-green-500: #0acf97;
+  --color-green-600: #08a679;
+  --color-green-700: #067c5b;
+  --color-green-800: #04533c;
+  --color-green-900: #02291e;
+  --color-teal-100: #cceef0;
+  --color-teal-200: #9adce1;
+  --color-teal-300: #67cbd3;
+  --color-teal-400: #35b9c4;
+  --color-teal-500: #02a8b5;
+  --color-teal-600: #028691;
+  --color-teal-700: #01656d;
+  --color-teal-800: #014348;
+  --color-teal-900: #002224;
+  --color-cyan-100: #d7eff6;
+  --color-cyan-200: #b0dfed;
+  --color-cyan-300: #88cfe3;
+  --color-cyan-400: #61bfda;
+  --color-cyan-500: #39afd1;
+  --color-cyan-600: #2e8ca7;
+  --color-cyan-700: #22697d;
+  --color-cyan-800: #174654;
+  --color-cyan-900: #0b232a;
+  --color-gray-100: #f1f3fa;
+  --color-gray-200: #eef2f7;
+  --color-gray-300: #dee2e6;
+  --color-gray-400: #ced4da;
+  --color-gray-500: #adb5bd;
+  --color-gray-600: #98a6ad;
+  --color-gray-700: #6c757d;
+  --color-gray-800: #343a40;
+  --color-gray-900: #313a46;
+  --color-theme-primary: #727cf5;
+  --color-theme-secondary: #6c757d;
+  --color-theme-success: #0acf97;
+  --color-theme-info: #39afd1;
+  --color-theme-warning: #ffbc00;
+  --color-theme-danger: #fa5c7c;
+  --color-theme-light: #eef2f7;
+  --color-theme-dark: #313a46;
+}
+
 :root {
   --ct-link-color: #727cf5;
   --ct-link-hover-color: #6169d0;
@@ -13824,6 +13943,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.test {
+  color: #008eff;
+}
+
 html {
   position: relative;
   min-height: 100%;
