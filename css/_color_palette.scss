@@ -1,5 +1,5 @@
 
-/* Color palette export */
+// Color palette export
 
 $colorList: (
     "blues":       $blues,
@@ -12,6 +12,30 @@ $colorList: (
     "greens":      $greens,
     "teals":       $teals,
     "cyans":       $cyans
+);
+
+$dark-grays: (
+  "100": #404954,
+  "200": #37404a,
+  "300": #464f5b,
+  "400": #8391a2,
+  "500": #aab8c5,
+  "600": #ced4da,
+  "700": #dee2e6,
+  "800": #e3eaef,
+  "900": #f1f1f1
+);
+
+// Dark Theme Color Map
+$dark-theme-colors: (
+     "primary":    $primary,
+     "secondary":  map-get($dark-grays, "600"),
+     "success":    $success,
+     "info":       $info,
+     "warning":    $warning,
+     "danger":     $danger,
+     "light":      map-get($dark-grays, "300"),
+     "dark":       map-get($dark-grays, "900")
 );
 
 .card[data-color] ul > li {
@@ -36,5 +60,78 @@ $colorList: (
     
     @each $colorName, $colorValue in $theme-colors {
         --color-theme-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $dark-grays {
+        --color-gray-dark-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $dark-theme-colors {
+        --color-theme-dark-#{$colorName}: #{$colorValue};	
+    }
+}
+
+$sabee-grays: (
+    "0":       $sabee-white,
+    "100":     $sabee-gray-100,
+    "200":     $sabee-gray-200,
+    "300":     $sabee-gray-300,
+    "400":     $sabee-gray-400,
+    "500":     $sabee-gray-500,
+    "600":     $sabee-gray-600,
+    "700":     $sabee-gray-700,
+    "800":     $sabee-gray-800,
+    "900":     $sabee-gray-900,
+    "1000":    $sabee-black
+);
+
+$sabee-colors: (
+    "100":    $sabee-blue,
+    "200":    $sabee-blue-darker,
+    "300":    $sabee-red,
+    "400":    $sabee-red-darker,
+    "500":    $sabee-yellow,
+    "600":    $sabee-yellow-darker,
+    "700":    $sabee-green,
+    "800":    $sabee-green-darker,
+    "900":    $sabee-cyan,
+    "1000":   $sabee-cyan-darker
+);
+
+// Overwrite with brand colors
+
+$primary:       $sabee-blue;
+$secondary:     $sabee-gray-700;
+$success:       $sabee-green;
+$info:          $sabee-cyan;
+$warning:       $sabee-yellow;
+$danger:        $sabee-red;
+$light:         $sabee-gray-100;
+$dark:          $sabee-gray-900;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+
+:root{
+    
+    @each $colorName, $colorValue in $theme-colors {
+        --color-sabee-theme-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $sabee-grays {
+        --color-sabee-gray-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $sabee-colors {
+        --color-sabee-color-#{$colorName}: #{$colorValue};	
     }
 }

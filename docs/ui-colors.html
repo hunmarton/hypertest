@@ -1110,6 +1110,16 @@
                                     </div> <!-- end card-body -->
                                 </div> <!-- end card-->
                             </div> <!-- end col -->
+                            
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+                                <div class="card" data-color="gray-dark">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Grays Dark</h4>
+
+                                        <ul class="list-group"></ul>                                          
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
 
 
                             <div class="col-sm-6 col-md-4 col-lg-3 col-xxl-2">
@@ -1220,6 +1230,49 @@
                                 <div class="card" data-color="theme">
                                     <div class="card-body">
                                         <h4 class="header-title">Theme colors</h4>
+
+                                        <ul class="list-group"></ul>                                          
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                            
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card" data-color="theme-dark">
+                                    <div class="card-body">
+                                        <h4 class="header-title">Dark theme colors</h4>
+
+                                        <ul class="list-group"></ul>                                          
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                        </div>
+                            
+                        <div class="row">
+                            
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+                                <div class="card" data-color="sabee-gray">
+                                    <div class="card-body">
+                                        <h4 class="header-title">New grays</h4>
+
+                                        <ul class="list-group"></ul>                                          
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                            
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xxl-2">
+                                <div class="card" data-color="sabee-color">
+                                    <div class="card-body">
+                                        <h4 class="header-title">New colors</h4>
+
+                                        <ul class="list-group"></ul>                                          
+                                    </div> <!-- end card-body -->
+                                </div> <!-- end card-->
+                            </div> <!-- end col -->
+                            
+                            <div class="col-sm-6 col-md-4">
+                                <div class="card" data-color="sabee-theme">
+                                    <div class="card-body">
+                                        <h4 class="header-title">New theme colors</h4>
 
                                         <ul class="list-group"></ul>                                          
                                     </div> <!-- end card-body -->
@@ -1367,7 +1420,7 @@
                     
                     var color = $(item).data('color');
                     
-                    if(color == 'theme'){
+                    if(color == 'theme' || color == 'sabee-theme' || color == 'theme-dark'){
                         var theme = ["primary","secondary","success","info","warning","danger","light","dark"];
                         
                         $.each(theme, function(i,themeItem){
@@ -1379,11 +1432,17 @@
                         });
                         
                     } else {
-                        var i = 100;
+                        
+                        var min = color == 'sabee-gray' ? 0 : 100;
+                        var max = color == 'sabee-gray' || color == 'sabee-color' ? 1100 : 1000;
+                        
+                        var i = min;
 
-                        while (i < 1000) {
+                        while (i < max) {
                             var colorValue = getComputedStyle(document.documentElement).getPropertyValue('--color-'+color+'-'+i);
-                            var textColor = i < 500 ? 'dark' : 'light';
+                            var colorCheck = color == 'sabee-color' ? (i > 400 && i < 700) : (i < 500);
+                            var textColor = colorCheck ? 'dark' : 'light';
+                            
                             createColorBox(item,colorValue,textColor);
                             i += 100;
                         }
@@ -1397,7 +1456,12 @@
                 var item = $('<li class="list-group-item"></li>');
                 item.css('background', colorValue);
                 item.html('<span>'+(before !== null ? before : '')+colorValue+'</span>');
-                item.attr('data-color',colorValue);
+                if(before !== null){
+                    item.attr('data-theme-color',colorValue);
+                } else {
+                    item.attr('data-color',colorValue);
+                }
+                
                 item.find('span').addClass('text-'+textColor);
                 $(elem).find('.list-group').append(item);
             }
