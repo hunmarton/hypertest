@@ -6,15 +6,15 @@
 
 // Dark Grays
 $dark-grays: (
-  "100": #404954,
-  "200": #37404a,
-  "300": #464f5b,
-  "400": #8391a2,
-  "500": #aab8c5,
-  "600": #ced4da,
-  "700": #dee2e6,
-  "800": #e3eaef,
-  "900": #f1f1f1
+  "100": map-get($custom-grays, "130"),
+  "200": map-get($custom-grays, "170"),
+  "300": map-get($custom-grays, "090"),
+  "400": map-get($custom-grays, "070"),
+  "500": map-get($custom-grays, "050"),
+  "600": map-get($grays, "400"),
+  "700": map-get($grays, "300"),
+  "800": map-get($custom-grays, "040"),
+  "900": map-get($custom-grays, "030")
 );
 
 // Dark Theme Color Map
@@ -66,7 +66,7 @@ body[data-layout-color="dark"] {
     // <=============================================>
 
      // Body Variable
-     --#{$variable-prefix}body-bg:                                   #343a40;
+     --#{$variable-prefix}body-bg:                                   #{map-get($grays, "800")};
      --#{$variable-prefix}body-color:                                #{map-get($dark-grays, '500')};
 
     // Link Variable
@@ -77,7 +77,7 @@ body[data-layout-color="dark"] {
     --#{$variable-prefix}border-color:                                  #{map-get($dark-grays, "300")};
 
     // scss-docs-start box-shadow-variables
-    --#{$variable-prefix}box-shadow:                                    0px 0px 35px 0px #{rgba(49, 57, 66, 0.5)};
+    --#{$variable-prefix}box-shadow:                                    0px 0px 35px 0px #{rgba(map-get($custom-grays, "180"), 0.5)};
     --#{$variable-prefix}box-shadow-sm:                                 0 .125rem .25rem #{rgba($black, .075)};
     --#{$variable-prefix}box-shadow-lg:                                 0 0 45px 0 #{rgba(0, 0, 0, 0.12)};
     --#{$variable-prefix}box-shadow-inset:                              inset 0 1px 2px #{rgba($black, .075)};
@@ -90,7 +90,7 @@ body[data-layout-color="dark"] {
     --#{$variable-prefix}text-muted:                                    #{map-get($dark-grays, "400")};
     --#{$variable-prefix}blockquote-footer-color:                       #{map-get($dark-grays, "600")};
 
-    --#{$variable-prefix}mark-bg:                                       #fcf8e3;
+    --#{$variable-prefix}mark-bg:                                       #{$custom-yellow};
 
     // scss-docs-start table-variables
     --#{$variable-prefix}table-color:                                    #{map-get($dark-grays, "500")};
@@ -323,27 +323,27 @@ body[data-layout-color="dark"] {
     // <=============================================>
 
     // Left Sidebar
-    --#{$variable-prefix}bg-leftbar:                                    #3a444e;
+    --#{$variable-prefix}bg-leftbar:                                    #{map-get($custom-grays, "160")};
 
     // Menu
-    --#{$variable-prefix}menu-item:                                     #cedce4;
+    --#{$variable-prefix}menu-item:                                     #{$custom-cyan};
     --#{$variable-prefix}menu-item-hover:                               #{$white};
     --#{$variable-prefix}menu-item-active:                              #{$white};
 
     // Topbar
-    --#{$variable-prefix}bg-topbar:                                     #3a444e;
-    --#{$variable-prefix}bg-topbar-search:                              #464f5b;
-    --#{$variable-prefix}nav-user-bg-topbar:                            #45515d;
-    --#{$variable-prefix}nav-user-border-topbar:                        #4a5764;
+    --#{$variable-prefix}bg-topbar:                                     #{map-get($custom-grays, "160")};
+    --#{$variable-prefix}bg-topbar-search:                              #{map-get($dark-grays, "300")};
+    --#{$variable-prefix}nav-user-bg-topbar:                            #{map-get($custom-grays, "100")};
+    --#{$variable-prefix}nav-user-border-topbar:                        #{map-get($custom-grays, "080")};
 
     // Dark Topbar
-    --#{$variable-prefix}bg-dark-topbar:                         #3a444e;
-    --#{$variable-prefix}bg-dark-topbar-search:                  #464f5b;
-    --#{$variable-prefix}nav-user-bg-dark-topbar:                #45515d;
-    --#{$variable-prefix}nav-user-border-dark-topbar:            #4a5764;
+    --#{$variable-prefix}bg-dark-topbar:                         #{map-get($custom-grays, "160")};
+    --#{$variable-prefix}bg-dark-topbar-search:                  #{map-get($dark-grays, "300")};
+    --#{$variable-prefix}nav-user-bg-dark-topbar:                #{map-get($custom-grays, "100")};
+    --#{$variable-prefix}nav-user-border-dark-topbar:            #{map-get($custom-grays, "080")};
 
     // Rightbar Width
-    --#{$variable-prefix}rightbar-bg:                     #37404a;
+    --#{$variable-prefix}rightbar-bg:                     #{map-get($dark-grays, "200")};
     --#{$variable-prefix}rightbar-title-bg:               #{$primary};
     --#{$variable-prefix}rightbar-title-color:            #{$white};
     --#{$variable-prefix}rightbar-title-btn-bg:           #{lighten($primary, 5%)};
@@ -351,30 +351,30 @@ body[data-layout-color="dark"] {
     --#{$variable-prefix}rightbar-overlay-bg:             #{$black};
 
     // Deatched left sidenav
-    --#{$variable-prefix}bg-detached-leftbar:             #37404a;
+    --#{$variable-prefix}bg-detached-leftbar:             #{map-get($dark-grays, "200")};
 
     // Background left-sidebar
-    --#{$variable-prefix}bg-leftbar-gradient:             #{linear-gradient(135deg,#8f75da 0,#727cf5 60%)};
-    --#{$variable-prefix}bg-topnav:                       #{linear-gradient(to bottom, #8f75da, #727cf5)};
+    --#{$variable-prefix}bg-leftbar-gradient:             #{linear-gradient(135deg,$custom-purple-100 0,$indigo-500 60%)};
+    --#{$variable-prefix}bg-topnav:                       #{linear-gradient(to bottom, $custom-purple-100, $indigo-500)};
 
     // Boxed Layout
-    --#{$variable-prefix}boxed-layout-bg:                 #3e4853;
+    --#{$variable-prefix}boxed-layout-bg:                 #{map-get($custom-grays, "140")};
 
     // Helpbox
     --#{$variable-prefix}help-box-light-bg:               #{rgba($white, 0.1)};
     --#{$variable-prefix}help-box-dark-bg:                #{$primary};
 
     // Nav-pill background
-    --#{$variable-prefix}nav-pills-bg:                    #404954;
+    --#{$variable-prefix}nav-pills-bg:                    #{map-get($dark-grays, "100")};
 
     // Custom-accordion
-    --#{$variable-prefix}custom-accordion-title-color:    #{map-get($dark-grays, "400")};;
+    --#{$variable-prefix}custom-accordion-title-color:    #{map-get($dark-grays, "400")};
 
     // Dragula demo background
-    --#{$variable-prefix}dragula-bg:                      #404954;
+    --#{$variable-prefix}dragula-bg:                      #{map-get($dark-grays, "100")};
 
     // Form wizard header background
-    --#{$variable-prefix}form-wizard-header-bg:           #404954;
+    --#{$variable-prefix}form-wizard-header-bg:           #{map-get($dark-grays, "100")};
 
     // Text title color
     --#{$variable-prefix}text-title-color:                #{$white};
@@ -387,24 +387,24 @@ body[data-layout-color="dark"] {
     --#{$variable-prefix}card-loader-bg:                  #{map-get($dark-grays, "900")};
 
     // Chat widget
-    --#{$variable-prefix}chat-primary-user-bg:            #404954;
-    --#{$variable-prefix}chat-secondary-user-bg:          #404954;
+    --#{$variable-prefix}chat-primary-user-bg:            #{map-get($dark-grays, "100")};
+    --#{$variable-prefix}chat-secondary-user-bg:          #{map-get($dark-grays, "100")};
 
     // User authentication Background
-    --#{$variable-prefix}auth-bg:                         #404954;
+    --#{$variable-prefix}auth-bg:                         #{map-get($dark-grays, "100")};
 
     // Apex chart
-    --#{$variable-prefix}apex-grid-color:                 #404954;
+    --#{$variable-prefix}apex-grid-color:                 #{map-get($dark-grays, "100")};
 
     // Hero
-    --#{$variable-prefix}hero-bg:                          #{linear-gradient(to bottom, #697ded, #5e30c1)};
+    --#{$variable-prefix}hero-bg:                          #{linear-gradient(to bottom, $custom-indigo, $custom-purple-300)};
 }
 
 
 
 body[data-layout-color="dark"][data-layout="detached"] {
      // Menu
-     --#{$variable-prefix}menu-item:                                     #8391a2;
+     --#{$variable-prefix}menu-item:                                     #{map-get($dark-grays, "400")};
      --#{$variable-prefix}menu-item-hover:                               #{$primary};
      --#{$variable-prefix}menu-item-active:                              #{$primary};
 }

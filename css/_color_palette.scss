@@ -15,15 +15,15 @@ $colorList: (
 );
 
 $dark-grays: (
-  "100": #404954,
-  "200": #37404a,
-  "300": #464f5b,
-  "400": #8391a2,
-  "500": #aab8c5,
-  "600": #ced4da,
-  "700": #dee2e6,
-  "800": #e3eaef,
-  "900": #f1f1f1
+  "100": map-get($custom-grays, "130"),
+  "200": map-get($custom-grays, "170"),
+  "300": map-get($custom-grays, "090"),
+  "400": map-get($custom-grays, "070"),
+  "500": map-get($custom-grays, "050"),
+  "600": map-get($grays, "400"),
+  "700": map-get($grays, "300"),
+  "800": map-get($custom-grays, "040"),
+  "900": map-get($custom-grays, "030")
 );
 
 // Dark Theme Color Map
@@ -56,6 +56,14 @@ $dark-theme-colors: (
 
     @each $colorName, $colorValue in $grays {
         --color-gray-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $custom-grays {
+        --color-custom-gray-#{$colorName}: #{$colorValue};	
+    }
+    
+    @each $colorName, $colorValue in $custom-colors {
+        --color-custom-color-#{$colorName}: #{$colorValue};	
     }
     
     @each $colorName, $colorValue in $theme-colors {

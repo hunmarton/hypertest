@@ -17,7 +17,7 @@
     --#{$variable-prefix}border-color:                                  #{map-get($grays, "300")};
 
     // scss-docs-start box-shadow-variables
-    --#{$variable-prefix}box-shadow:                                    0px 0px 35px 0px #{rgba(154, 161, 171, 0.15)};
+    --#{$variable-prefix}box-shadow:                                    0px 0px 35px 0px #{rgba(map-get($custom-grays, "060"), 0.15)};
     --#{$variable-prefix}box-shadow-sm:                                 0 .125rem .25rem #{rgba($black, .075)};
     --#{$variable-prefix}box-shadow-lg:                                 0 0 45px 0 #{rgba(0, 0, 0, 0.12)};
     --#{$variable-prefix}box-shadow-inset:                              inset 0 1px 2px #{rgba($black, .075)};
@@ -30,7 +30,7 @@
     --#{$variable-prefix}text-muted:                                    #{map-get($grays, "600")};
     --#{$variable-prefix}blockquote-footer-color:                       #{map-get($grays, "600")};
 
-    --#{$variable-prefix}mark-bg:                                       #fcf8e3;
+    --#{$variable-prefix}mark-bg:                                       #{$custom-yellow};
 
     // scss-docs-start table-variables
     --#{$variable-prefix}table-color:                                    #{$body-color};
@@ -274,14 +274,14 @@
     // Topbar
     --#{$variable-prefix}bg-topbar:                       #{$white};
     --#{$variable-prefix}bg-topbar-search:                #{map-get($grays, "100")};
-    --#{$variable-prefix}nav-user-bg-topbar:              #3c4655;
-    --#{$variable-prefix}nav-user-border-topbar:          #414d5d;
+    --#{$variable-prefix}nav-user-bg-topbar:              #{map-get($custom-grays, "150")};
+    --#{$variable-prefix}nav-user-border-topbar:          #{map-get($custom-grays, "120")};
 
     // Dark Topbar
-    --#{$variable-prefix}bg-dark-topbar:                  #313a46;
-    --#{$variable-prefix}bg-dark-topbar-search:           #3c4655;
-    --#{$variable-prefix}nav-user-bg-dark-topbar:         #3c4655;
-    --#{$variable-prefix}nav-user-border-dark-topbar:     #414d5d;
+    --#{$variable-prefix}bg-dark-topbar:                  #{map-get($grays, "900")};
+    --#{$variable-prefix}bg-dark-topbar-search:           #{map-get($custom-grays, "150")};
+    --#{$variable-prefix}nav-user-bg-dark-topbar:         #{map-get($custom-grays, "150")};
+    --#{$variable-prefix}nav-user-border-dark-topbar:     #{map-get($custom-grays, "120")};
 
 
 
@@ -289,16 +289,16 @@
     --#{$variable-prefix}rightbar-bg:                     #{$white};
     --#{$variable-prefix}rightbar-title-bg:               #{map-get($grays, "900")};
     --#{$variable-prefix}rightbar-title-color:            #{$white};
-    --#{$variable-prefix}rightbar-title-btn-bg:           #444e5a;
+    --#{$variable-prefix}rightbar-title-btn-bg:           #{map-get($custom-grays, "110")};
     --#{$variable-prefix}rightbar-title-btn-color:        #{$white};
-    --#{$variable-prefix}rightbar-overlay-bg:             #37404a;
+    --#{$variable-prefix}rightbar-overlay-bg:             #{map-get($custom-grays, "170")};
 
     // Deatched left sidenav
     --#{$variable-prefix}bg-detached-leftbar:             #{$white};
 
     // Background left-sidebar
-    --#{$variable-prefix}bg-leftbar-gradient:             #{linear-gradient(135deg, #8f75da 0%, #727cf5 60%)};
-    --#{$variable-prefix}bg-topnav:                       #313a46;
+    --#{$variable-prefix}bg-leftbar-gradient:             #{linear-gradient(135deg, $custom-purple-100 0%, $indigo-500 60%)};
+    --#{$variable-prefix}bg-topnav:                       #{map-get($grays, "900")};
 
     // Boxed Layout
     --#{$variable-prefix}boxed-layout-bg:                 #{$white};
@@ -308,19 +308,19 @@
     --#{$variable-prefix}help-box-dark-bg:                #{$primary};
 
     // Nav-pill background
-    --#{$variable-prefix}nav-pills-bg:                    #eef2f7;
+    --#{$variable-prefix}nav-pills-bg:                    #{map-get($grays, "200")};
 
     // Custom-accordion
     --#{$variable-prefix}custom-accordion-title-color:    #{map-get($grays, "900")};
 
     // Dragula demo background
-    --#{$variable-prefix}dragula-bg:                      #f7f9fb;
+    --#{$variable-prefix}dragula-bg:                      #{map-get($custom-grays, "020")};
 
     // Form wizard header background
-    --#{$variable-prefix}form-wizard-header-bg:           #eef2f7;
+    --#{$variable-prefix}form-wizard-header-bg:           #{map-get($grays, "200")};
 
     // Text title color
-    --#{$variable-prefix}text-title-color:                #6c757d;
+    --#{$variable-prefix}text-title-color:                #{map-get($grays, "700")};
 
     // Page title color
     --#{$variable-prefix}page-title-color:                #{map-get($grays, "700")};
@@ -329,17 +329,17 @@
     --#{$variable-prefix}card-loader-bg:                  #{map-get($grays, "900")};
 
     // Chat widget
-    --#{$variable-prefix}chat-primary-user-bg:            #fef5e4;
-    --#{$variable-prefix}chat-secondary-user-bg:          #f1f3fa;
+    --#{$variable-prefix}chat-primary-user-bg:            #{$custom-orange};
+    --#{$variable-prefix}chat-secondary-user-bg:          #{map-get($grays, "100")};
 
     // User authentication Background
     --#{$variable-prefix}auth-bg:                         #{$white};
 
     // Apex chart
-    --#{$variable-prefix}apex-grid-color:                 #f9f9fd;
+    --#{$variable-prefix}apex-grid-color:                 #{map-get($custom-grays, "010")};
 
     // Hero
-    --#{$variable-prefix}hero-bg:                         #{linear-gradient(to bottom,#8669ed,#727cf5)};
+    --#{$variable-prefix}hero-bg:                         #{linear-gradient(to bottom,$custom-purple-200,$indigo-500)};
 }
 
 body[data-leftbar-theme="dark"] {
@@ -347,8 +347,8 @@ body[data-leftbar-theme="dark"] {
    --#{$variable-prefix}bg-leftbar:                       #{map-get($grays, "900")};
 
    // Menu
-   --#{$variable-prefix}dark-menu-item:                   #8391a2;
-   --#{$variable-prefix}dark-menu-item-hover:             #bccee4;
+   --#{$variable-prefix}dark-menu-item:                   #{map-get($custom-grays, "070")};
+   --#{$variable-prefix}dark-menu-item-hover:             #{$custom-blue};
    --#{$variable-prefix}dark-menu-item-active:            #{$white};
 }
 
@@ -356,7 +356,7 @@ body[data-leftbar-theme="dark"] {
 
 body[data-leftbar-theme="default"] {
     // Menu
---#{$variable-prefix}menu-item:                           #cedce4;
+--#{$variable-prefix}menu-item:                           #{$custom-cyan};
 --#{$variable-prefix}menu-item-hover:                     #{$white};
 --#{$variable-prefix}menu-item-active:                    #{$white};
 }

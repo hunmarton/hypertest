@@ -27,3 +27,71 @@ $sabee-green-darker:    #009e45;
 $sabee-cyan:            #0cbfe8;
 $sabee-cyan-darker:     #008fd3;
 // brand end color-variables
+
+// custom theme colors
+
+$custom-gray-010:    #f9f9fd;
+$custom-gray-020:    #f7f9fb;
+$custom-gray-030:    #f1f1f1;
+$custom-gray-040:    #e3eaef;
+$custom-gray-050:    #aab8c5;
+$custom-gray-060:    #9AA1AB; //rgb(154, 161, 171)
+$custom-gray-070:    #8391a2;
+$custom-gray-080:    #4a5764;
+$custom-gray-090:    #464f5b;
+$custom-gray-100:    #45515d;
+$custom-gray-110:    #444e5a;
+$custom-gray-120:    #414d5d;
+$custom-gray-130:    #404954;
+$custom-gray-140:    #3e4853;
+$custom-gray-150:    #3c4655;
+$custom-gray-160:    #3a444e;
+$custom-gray-170:    #37404a;
+$custom-gray-180:    #313942; //rgb(49, 57, 66)
+
+$custom-blue:       #bccee4;
+
+$custom-cyan:       #cedce4;
+
+$custom-yellow:     #fcf8e3;
+
+$custom-orange:     #FEF5E4;
+
+$custom-purple-100:   #8F75DA;
+$custom-purple-200:   #8669ed;
+$custom-purple-300:   #5e30c1;
+
+$custom-indigo:     #697ded;
+
+
+$custom-grays: (
+    "010":  $custom-gray-010,
+    "020":  $custom-gray-020,
+    "030":  $custom-gray-030,
+    "040":  $custom-gray-040,
+    "050":  $custom-gray-050,
+    "060":  $custom-gray-060,
+    "070":  $custom-gray-070,
+    "080":  $custom-gray-080,
+    "090":  $custom-gray-090,
+    "100":  $custom-gray-100,
+    "110":  $custom-gray-110,
+    "120":  $custom-gray-120,
+    "130":  $custom-gray-130,
+    "140":  $custom-gray-140,
+    "150":  $custom-gray-150,
+    "160":  $custom-gray-160,
+    "170":  $custom-gray-170,
+    "180":  $custom-gray-180
+);
+
+$custom-colors: (
+    "100": $custom-blue,
+    "200": $custom-cyan,
+    "300": $custom-yellow,
+    "400": $custom-orange,
+    "500": $custom-purple-100,
+    "600": $custom-purple-200,
+    "700": $custom-purple-300,
+    "800": $custom-indigo
+);
