@@ -273,30 +273,35 @@
                         
                     } else {
                         
-                        var min = color == 'sabee-gray' ? 0 : 100;
-                        var max = color == 'sabee-gray' || color == 'sabee-color' ? 1100 : 1000;
+                        var min = 100;
+                        var max = 901;
                         var increase = 100;
                         
                         if(color == 'custom-color'){
-                            max = 900;
+                            max = 801;
                         }
                         
-                        if(color == 'custom-gray'){
+                        if($.inArray(color,['sabee-gray','custom-gray','sabee-color']) > -1){
                             min = 10;
-                            max = 190;
                             increase = 10;
+                            
+                            switch(color){
+                                case 'custom-gray': max = 181; break;
+                                case 'sabee-color': max = 101; break;
+                                case 'sabee-gray': max = 111; break;
+                            }
                         }
-                        
+
                         var i = min;
 
                         while (i < max) {
                             
-                            var colorNumber = color == 'custom-gray' && i < 100 ? '0'+i : i;
+                            var colorNumber = i < 100 ? '0'+i : i;
                             
                             var colorValue = getComputedStyle(document.documentElement).getPropertyValue('--color-'+color+'-'+colorNumber);
-                            var colorCheck = color == 'sabee-color' ? (i > 400 && i < 700) : (i < 500);
+                            var colorCheck = color == 'sabee-color' ? (i > 40 && i < 70) : (i < 500);
                             
-                            if(color == 'custom-gray'){
+                            if($.inArray(color,['sabee-gray','custom-gray']) > -1){
                                 colorCheck = i < 50;
                             }
                             

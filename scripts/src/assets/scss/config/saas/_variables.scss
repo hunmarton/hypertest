@@ -70,15 +70,26 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $indigo;
-$secondary:     $gray-700;
-$success:       $green;
-$info:          $cyan;
-$warning:       $yellow;
-$danger:        $red;
-$light:         $gray-200;
-$dark:          $gray-900;
+//$primary:       $indigo;
+//$secondary:     $gray-700;
+//$success:       $green;
+//$info:          $cyan;
+//$warning:       $yellow;
+//$danger:        $red;
+//$light:         $gray-200;
+//$dark:          $gray-900;
 // scss-docs-end theme-color-variables
+
+// brand colors theme-color-variables
+$primary:       $sabee-blue;
+$secondary:     $sabee-gray-080;
+$success:       $sabee-green;
+$info:          $sabee-cyan;
+$warning:       $sabee-yellow;
+$danger:        $sabee-red;
+$light:         $sabee-gray-020;
+$dark:          $sabee-gray-100;
+// brand colors end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (

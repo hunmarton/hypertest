@@ -2,18 +2,32 @@
 /* Custom brand colors */
 
 // brand grays gray-color-variables
-$sabee-white:    #f9f9fa;
-$sabee-gray-100: #ebeef0;
-$sabee-gray-200: #dde1e5;
-$sabee-gray-300: #ced4d8;
-$sabee-gray-400: #bdc5cb;
-$sabee-gray-500: #aab4bd;
-$sabee-gray-600: #95a1ac;
-$sabee-gray-700: #7b8b98;
-$sabee-gray-800: #5f6e7a;
-$sabee-gray-900: #384047;
-$sabee-black:    #1c242a;
+$sabee-gray-010: #f9f9fa;
+$sabee-gray-020: #ebeef0;
+$sabee-gray-030: #dde1e5;
+$sabee-gray-040: #ced4d8;
+$sabee-gray-050: #bdc5cb;
+$sabee-gray-060: #aab4bd;
+$sabee-gray-070: #95a1ac;
+$sabee-gray-080: #7b8b98;
+$sabee-gray-090: #5f6e7a;
+$sabee-gray-100: #384047;
+$sabee-gray-110: #1c242a;
 // brand grays end gray-color-variables
+
+$sabee-grays: (
+    "010":     $sabee-gray-010,
+    "020":     $sabee-gray-020,
+    "030":     $sabee-gray-030,
+    "040":     $sabee-gray-040,
+    "050":     $sabee-gray-050,
+    "060":     $sabee-gray-060,
+    "070":     $sabee-gray-070,
+    "080":     $sabee-gray-080,
+    "090":     $sabee-gray-090,
+    "100":     $sabee-gray-100,
+    "110":     $sabee-gray-110
+);
 
 // brand color-variables
 $sabee-blue:            #008eff;
@@ -94,4 +108,18 @@ $custom-colors: (
     "600": $custom-purple-200,
     "700": $custom-purple-300,
     "800": $custom-indigo
+);
+
+// Dark Theme Color Map
+
+$dark-grays: (
+  "100": map-get($custom-grays, "130"),
+  "200": map-get($custom-grays, "170"),
+  "300": map-get($custom-grays, "090"),
+  "400": map-get($custom-grays, "070"),
+  "500": map-get($custom-grays, "050"),
+  "600": map-get($grays, "400"),
+  "700": map-get($grays, "300"),
+  "800": map-get($custom-grays, "040"),
+  "900": map-get($custom-grays, "030")
 );

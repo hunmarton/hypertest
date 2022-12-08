@@ -4,19 +4,6 @@
 
 // Dark Variable
 
-// Dark Grays
-$dark-grays: (
-  "100": map-get($custom-grays, "130"),
-  "200": map-get($custom-grays, "170"),
-  "300": map-get($custom-grays, "090"),
-  "400": map-get($custom-grays, "070"),
-  "500": map-get($custom-grays, "050"),
-  "600": map-get($grays, "400"),
-  "700": map-get($grays, "300"),
-  "800": map-get($custom-grays, "040"),
-  "900": map-get($custom-grays, "030")
-);
-
 // Dark Theme Color Map
 $dark-theme-colors: (
      "primary":    $primary,
