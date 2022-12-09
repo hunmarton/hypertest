@@ -62,14 +62,25 @@ $sabee-colors: (
 
 :root{
 
-    /* Color palettes */
+    /* Color palettes - Bootstrap */
+    @each $colorsName, $colors in $colorList-bootstrap {
+
+        @each $colorName, $colorValue in $colors {
+            --color-bootstrap-#{$colorName}: #{$colorValue};
+        }
+    }
+    /* Grays - Bootstrap */
+    @each $colorName, $colorValue in $grays-bootstrap {
+        --color-gray-bootstrap-#{$colorName}: #{$colorValue};
+    }
+    /* Color palettes - Hyper */
     @each $colorsName, $colors in $colorList {
 
         @each $colorName, $colorValue in $colors {
             --color-#{$colorName}: #{$colorValue};
         }
     }
-    /* Grays */
+    /* Grays - Hyper */
     @each $colorName, $colorValue in $grays {
         --color-gray-#{$colorName}: #{$colorValue};	
     }
@@ -80,6 +91,10 @@ $sabee-colors: (
     /* Custom colors */
     @each $colorName, $colorValue in $custom-colors {
         --color-custom-color-#{$colorName}: #{$colorValue};	
+    }
+    /* Light theme colors - Bootstrap */
+    @each $colorName, $colorValue in $theme-colors-bootstrap {
+        --color-theme-bootstrap-#{$colorName}: #{$colorValue};
     }
     /* Light theme colors - original */
     @each $colorName, $colorValue in $light-theme-colors {

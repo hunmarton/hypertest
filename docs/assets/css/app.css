@@ -15,7 +15,108 @@ File: Main Css File
 }
 
 :root {
-  /* Color palettes */
+  /* Color palettes - Bootstrap */
+  --color-bootstrap-blue-100: #cfe2ff;
+  --color-bootstrap-blue-200: #9ec5fe;
+  --color-bootstrap-blue-300: #6ea8fe;
+  --color-bootstrap-blue-400: #3d8bfd;
+  --color-bootstrap-blue-500: #0d6efd;
+  --color-bootstrap-blue-600: #0a58ca;
+  --color-bootstrap-blue-700: #084298;
+  --color-bootstrap-blue-800: #052c65;
+  --color-bootstrap-blue-900: #031633;
+  --color-bootstrap-indigo-100: #e0cffc;
+  --color-bootstrap-indigo-200: #c29ffa;
+  --color-bootstrap-indigo-300: #a370f7;
+  --color-bootstrap-indigo-400: #8540f5;
+  --color-bootstrap-indigo-500: #6610f2;
+  --color-bootstrap-indigo-600: #520dc2;
+  --color-bootstrap-indigo-700: #3d0a91;
+  --color-bootstrap-indigo-800: #290661;
+  --color-bootstrap-indigo-900: #140330;
+  --color-bootstrap-purple-100: #c5b3e6;
+  --color-bootstrap-purple-200: #e2d9f3;
+  --color-bootstrap-purple-300: #a98eda;
+  --color-bootstrap-purple-400: #8c68cd;
+  --color-bootstrap-purple-500: #6f42c1;
+  --color-bootstrap-purple-600: #59359a;
+  --color-bootstrap-purple-700: #432874;
+  --color-bootstrap-purple-800: #2c1a4d;
+  --color-bootstrap-purple-900: #160d27;
+  --color-bootstrap-pink-100: #f7d6e6;
+  --color-bootstrap-pink-200: #efadce;
+  --color-bootstrap-pink-300: #e685b5;
+  --color-bootstrap-pink-400: #de5c9d;
+  --color-bootstrap-pink-500: #d63384;
+  --color-bootstrap-pink-600: #ab296a;
+  --color-bootstrap-pink-700: #801f4f;
+  --color-bootstrap-pink-800: #561435;
+  --color-bootstrap-pink-900: #2b0a1a;
+  --color-bootstrap-red-100: #f8d7da;
+  --color-bootstrap-red-200: #f1aeb5;
+  --color-bootstrap-red-300: #ea868f;
+  --color-bootstrap-red-400: #e35d6a;
+  --color-bootstrap-red-500: #dc3545;
+  --color-bootstrap-red-600: #b02a37;
+  --color-bootstrap-red-700: #842029;
+  --color-bootstrap-red-800: #58151c;
+  --color-bootstrap-red-900: #2c0b0e;
+  --color-bootstrap-orange-100: #ffe5d0;
+  --color-bootstrap-orange-200: #fecba1;
+  --color-bootstrap-orange-300: #feb272;
+  --color-bootstrap-orange-400: #fd9843;
+  --color-bootstrap-orange-500: #fd7e14;
+  --color-bootstrap-orange-600: #ca6510;
+  --color-bootstrap-orange-700: #984c0c;
+  --color-bootstrap-orange-800: #653208;
+  --color-bootstrap-orange-900: #331904;
+  --color-bootstrap-yellow-100: #fff3cd;
+  --color-bootstrap-yellow-200: #ffe69c;
+  --color-bootstrap-yellow-300: #ffda6a;
+  --color-bootstrap-yellow-400: #ffcd39;
+  --color-bootstrap-yellow-500: #ffc107;
+  --color-bootstrap-yellow-600: #cc9a06;
+  --color-bootstrap-yellow-700: #997404;
+  --color-bootstrap-yellow-800: #664d03;
+  --color-bootstrap-yellow-900: #332701;
+  --color-bootstrap-green-100: #d1e7dd;
+  --color-bootstrap-green-200: #a3cfbb;
+  --color-bootstrap-green-300: #75b798;
+  --color-bootstrap-green-400: #479f76;
+  --color-bootstrap-green-500: #198754;
+  --color-bootstrap-green-600: #146c43;
+  --color-bootstrap-green-700: #0f5132;
+  --color-bootstrap-green-800: #0a3622;
+  --color-bootstrap-green-900: #051b11;
+  --color-bootstrap-teal-100: #d2f4ea;
+  --color-bootstrap-teal-200: #a6e9d5;
+  --color-bootstrap-teal-300: #79dfc1;
+  --color-bootstrap-teal-400: #4dd4ac;
+  --color-bootstrap-teal-500: #20c997;
+  --color-bootstrap-teal-600: #1aa179;
+  --color-bootstrap-teal-700: #13795b;
+  --color-bootstrap-teal-800: #0d503c;
+  --color-bootstrap-teal-900: #06281e;
+  --color-bootstrap-cyan-100: #cff4fc;
+  --color-bootstrap-cyan-200: #9eeaf9;
+  --color-bootstrap-cyan-300: #6edff6;
+  --color-bootstrap-cyan-400: #3dd5f3;
+  --color-bootstrap-cyan-500: #0dcaf0;
+  --color-bootstrap-cyan-600: #0aa2c0;
+  --color-bootstrap-cyan-700: #087990;
+  --color-bootstrap-cyan-800: #055160;
+  --color-bootstrap-cyan-900: #032830;
+  /* Grays - Bootstrap */
+  --color-gray-bootstrap-100: #f8f9fa;
+  --color-gray-bootstrap-200: #e9ecef;
+  --color-gray-bootstrap-300: #dee2e6;
+  --color-gray-bootstrap-400: #ced4da;
+  --color-gray-bootstrap-500: #adb5bd;
+  --color-gray-bootstrap-600: #6c757d;
+  --color-gray-bootstrap-700: #495057;
+  --color-gray-bootstrap-800: #343a40;
+  --color-gray-bootstrap-900: #212529;
+  /* Color palettes - Hyper */
   --color-blue-100: #d5e8fe;
   --color-blue-200: #abd2fc;
   --color-blue-300: #80bbfb;
@@ -34,8 +135,8 @@ File: Main Css File
   --color-indigo-700: #444a93;
   --color-indigo-800: #2e3262;
   --color-indigo-900: #171931;
-  --color-purple-100: #e1dfef;
-  --color-purple-200: #c4bfdf;
+  --color-purple-100: #c4bfdf;
+  --color-purple-200: #e1dfef;
   --color-purple-300: #a69ece;
   --color-purple-400: #897ebe;
   --color-purple-500: #6b5eae;
@@ -106,7 +207,7 @@ File: Main Css File
   --color-cyan-700: #22697d;
   --color-cyan-800: #174654;
   --color-cyan-900: #0b232a;
-  /* Grays */
+  /* Grays - Hyper */
   --color-gray-100: #f1f3fa;
   --color-gray-200: #eef2f7;
   --color-gray-300: #dee2e6;
@@ -144,6 +245,15 @@ File: Main Css File
   --color-custom-color-600: #8669ed;
   --color-custom-color-700: #5e30c1;
   --color-custom-color-800: #697ded;
+  /* Light theme colors - Bootstrap */
+  --color-theme-bootstrap-primary: #0d6efd;
+  --color-theme-bootstrap-secondary: #6c757d;
+  --color-theme-bootstrap-success: #198754;
+  --color-theme-bootstrap-info: #0dcaf0;
+  --color-theme-bootstrap-warning: #ffc107;
+  --color-theme-bootstrap-danger: #dc3545;
+  --color-theme-bootstrap-light: #f8f9fa;
+  --color-theme-bootstrap-dark: #212529;
   /* Light theme colors - original */
   --color-theme-primary: #727cf5;
   --color-theme-secondary: #6c757d;

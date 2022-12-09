@@ -113,13 +113,40 @@ $custom-colors: (
 // Dark Theme Color Map
 
 $dark-grays: (
-  "100": map-get($custom-grays, "130"),
-  "200": map-get($custom-grays, "170"),
-  "300": map-get($custom-grays, "090"),
-  "400": map-get($custom-grays, "070"),
-  "500": map-get($custom-grays, "050"),
-  "600": map-get($grays, "400"),
-  "700": map-get($grays, "300"),
-  "800": map-get($custom-grays, "040"),
-  "900": map-get($custom-grays, "030")
+    "100": map-get($custom-grays, "130"),
+    "200": map-get($custom-grays, "170"),
+    "300": map-get($custom-grays, "090"),
+    "400": map-get($custom-grays, "070"),
+    "500": map-get($custom-grays, "050"),
+    "600": map-get($grays, "400"),
+    "700": map-get($grays, "300"),
+    "800": map-get($custom-grays, "040"),
+    "900": map-get($custom-grays, "030")
+);
+
+
+$colorList-bootstrap: (
+    "blues":       $blues,
+    "indigos":     $indigos,
+    "purples":     $purples,
+    "pinks":       $pinks,
+    "reds":        $reds,
+    "oranges":     $oranges,
+    "yellows":     $yellows,
+    "greens":      $greens,
+    "teals":       $teals,
+    "cyans":       $cyans
+);
+
+$grays-bootstrap: $grays;
+
+$theme-colors-bootstrap: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
 );
