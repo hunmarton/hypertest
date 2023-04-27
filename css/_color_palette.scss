@@ -29,7 +29,7 @@ $light-theme-colors: (
 
 // Dark Theme Color Map - original
 
-$dark-theme-colors: (
+$dark-theme-colors-hyper: (
      "primary":    map-get($light-theme-colors, "primary"),
      "secondary":  map-get($dark-grays, "600"),
      "success":    map-get($light-theme-colors, "success"),
@@ -52,6 +52,264 @@ $sabee-colors: (
     "090":      $sabee-cyan,
     "100":      $sabee-cyan-darker
 );
+
+$dark-theme-colors: (
+        "primary":    $primary,
+        "secondary":  map-get($sabee-dark-grays, "600"),
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      map-get($sabee-dark-grays, "300"),
+        "dark":       map-get($sabee-dark-grays, "900")
+);
+
+$blue:       #008BF4;
+$indigo:     #4854FF;
+$purple:     #8B32FF;
+$pink:       #FF23A0;
+$red:        #FF3C49;
+$orange:     #FF7913;
+$yellow:     #FFD10D;
+$green:      #00B850;
+$teal:       #00C8BB;
+$cyan:       #4DAFFF;
+
+
+$blue-100: tint-color($blue, 80%);
+$blue-200: tint-color($blue, 60%);
+$blue-300: tint-color($blue, 40%);
+$blue-400: tint-color($blue, 20%);
+$blue-500: $blue;
+$blue-600: shade-color($blue, 20%);
+$blue-700: shade-color($blue, 40%);
+$blue-800: shade-color($blue, 60%);
+$blue-900: shade-color($blue, 80%);
+
+$indigo-100: tint-color($indigo, 80%);
+$indigo-200: tint-color($indigo, 60%);
+$indigo-300: tint-color($indigo, 40%);
+$indigo-400: tint-color($indigo, 20%);
+$indigo-500: $indigo;
+$indigo-600: shade-color($indigo, 20%);
+$indigo-700: shade-color($indigo, 40%);
+$indigo-800: shade-color($indigo, 60%);
+$indigo-900: shade-color($indigo, 80%);
+
+$purple-100: tint-color($purple, 80%);
+$purple-200: tint-color($purple, 60%);
+$purple-300: tint-color($purple, 40%);
+$purple-400: tint-color($purple, 20%);
+$purple-500: $purple;
+$purple-600: shade-color($purple, 20%);
+$purple-700: shade-color($purple, 40%);
+$purple-800: shade-color($purple, 60%);
+$purple-900: shade-color($purple, 80%);
+
+$pink-100: tint-color($pink, 80%);
+$pink-200: tint-color($pink, 60%);
+$pink-300: tint-color($pink, 40%);
+$pink-400: tint-color($pink, 20%);
+$pink-500: $pink;
+$pink-600: shade-color($pink, 20%);
+$pink-700: shade-color($pink, 40%);
+$pink-800: shade-color($pink, 60%);
+$pink-900: shade-color($pink, 80%);
+
+$red-100: tint-color($red, 80%);
+$red-200: tint-color($red, 60%);
+$red-300: tint-color($red, 40%);
+$red-400: tint-color($red, 20%);
+$red-500: $red;
+$red-600: shade-color($red, 20%);
+$red-700: shade-color($red, 40%);
+$red-800: shade-color($red, 60%);
+$red-900: shade-color($red, 80%);
+
+$orange-100: tint-color($orange, 80%);
+$orange-200: tint-color($orange, 60%);
+$orange-300: tint-color($orange, 40%);
+$orange-400: tint-color($orange, 20%);
+$orange-500: $orange;
+$orange-600: shade-color($orange, 20%);
+$orange-700: shade-color($orange, 40%);
+$orange-800: shade-color($orange, 60%);
+$orange-900: shade-color($orange, 80%);
+
+$yellow-100: tint-color($yellow, 80%);
+$yellow-200: tint-color($yellow, 60%);
+$yellow-300: tint-color($yellow, 40%);
+$yellow-400: tint-color($yellow, 20%);
+$yellow-500: $yellow;
+$yellow-600: shade-color($yellow, 20%);
+$yellow-700: shade-color($yellow, 40%);
+$yellow-800: shade-color($yellow, 60%);
+$yellow-900: shade-color($yellow, 80%);
+
+$green-100: tint-color($green, 80%);
+$green-200: tint-color($green, 60%);
+$green-300: tint-color($green, 40%);
+$green-400: tint-color($green, 20%);
+$green-500: $green;
+$green-600: shade-color($green, 20%);
+$green-700: shade-color($green, 40%);
+$green-800: shade-color($green, 60%);
+$green-900: shade-color($green, 80%);
+
+$teal-100: tint-color($teal, 80%);
+$teal-200: tint-color($teal, 60%);
+$teal-300: tint-color($teal, 40%);
+$teal-400: tint-color($teal, 20%);
+$teal-500: $teal;
+$teal-600: shade-color($teal, 20%);
+$teal-700: shade-color($teal, 40%);
+$teal-800: shade-color($teal, 60%);
+$teal-900: shade-color($teal, 80%);
+
+$cyan-100: tint-color($cyan, 80%);
+$cyan-200: tint-color($cyan, 60%);
+$cyan-300: tint-color($cyan, 40%);
+$cyan-400: tint-color($cyan, 20%);
+$cyan-500: $cyan;
+$cyan-600: shade-color($cyan, 20%);
+$cyan-700: shade-color($cyan, 40%);
+$cyan-800: shade-color($cyan, 60%);
+$cyan-900: shade-color($cyan, 80%);
+
+
+$sabee-blues: (
+        "blue-100": $blue-100,
+        "blue-200": $blue-200,
+        "blue-300": $blue-300,
+        "blue-400": $blue-400,
+        "blue-500": $blue-500,
+        "blue-600": $blue-600,
+        "blue-700": $blue-700,
+        "blue-800": $blue-800,
+        "blue-900": $blue-900
+);
+
+$sabee-indigos: (
+        "indigo-100": $indigo-100,
+        "indigo-200": $indigo-200,
+        "indigo-300": $indigo-300,
+        "indigo-400": $indigo-400,
+        "indigo-500": $indigo-500,
+        "indigo-600": $indigo-600,
+        "indigo-700": $indigo-700,
+        "indigo-800": $indigo-800,
+        "indigo-900": $indigo-900
+);
+
+$sabee-purples: (
+        "purple-100": $purple-200,
+        "purple-200": $purple-100,
+        "purple-300": $purple-300,
+        "purple-400": $purple-400,
+        "purple-500": $purple-500,
+        "purple-600": $purple-600,
+        "purple-700": $purple-700,
+        "purple-800": $purple-800,
+        "purple-900": $purple-900
+);
+
+$sabee-pinks: (
+        "pink-100": $pink-100,
+        "pink-200": $pink-200,
+        "pink-300": $pink-300,
+        "pink-400": $pink-400,
+        "pink-500": $pink-500,
+        "pink-600": $pink-600,
+        "pink-700": $pink-700,
+        "pink-800": $pink-800,
+        "pink-900": $pink-900
+);
+
+$sabee-reds: (
+        "red-100": $red-100,
+        "red-200": $red-200,
+        "red-300": $red-300,
+        "red-400": $red-400,
+        "red-500": $red-500,
+        "red-600": $red-600,
+        "red-700": $red-700,
+        "red-800": $red-800,
+        "red-900": $red-900
+);
+
+$sabee-oranges: (
+        "orange-100": $orange-100,
+        "orange-200": $orange-200,
+        "orange-300": $orange-300,
+        "orange-400": $orange-400,
+        "orange-500": $orange-500,
+        "orange-600": $orange-600,
+        "orange-700": $orange-700,
+        "orange-800": $orange-800,
+        "orange-900": $orange-900
+);
+
+$sabee-yellows: (
+        "yellow-100": $yellow-100,
+        "yellow-200": $yellow-200,
+        "yellow-300": $yellow-300,
+        "yellow-400": $yellow-400,
+        "yellow-500": $yellow-500,
+        "yellow-600": $yellow-600,
+        "yellow-700": $yellow-700,
+        "yellow-800": $yellow-800,
+        "yellow-900": $yellow-900
+);
+
+$sabee-greens: (
+        "green-100": $green-100,
+        "green-200": $green-200,
+        "green-300": $green-300,
+        "green-400": $green-400,
+        "green-500": $green-500,
+        "green-600": $green-600,
+        "green-700": $green-700,
+        "green-800": $green-800,
+        "green-900": $green-900
+);
+
+$sabee-teals: (
+        "teal-100": $teal-100,
+        "teal-200": $teal-200,
+        "teal-300": $teal-300,
+        "teal-400": $teal-400,
+        "teal-500": $teal-500,
+        "teal-600": $teal-600,
+        "teal-700": $teal-700,
+        "teal-800": $teal-800,
+        "teal-900": $teal-900
+);
+
+$sabee-cyans: (
+        "cyan-100": $cyan-100,
+        "cyan-200": $cyan-200,
+        "cyan-300": $cyan-300,
+        "cyan-400": $cyan-400,
+        "cyan-500": $cyan-500,
+        "cyan-600": $cyan-600,
+        "cyan-700": $cyan-700,
+        "cyan-800": $cyan-800,
+        "cyan-900": $cyan-900
+);
+
+$sabeeColorList: (
+        "blues":       $sabee-blues,
+        "indigos":     $sabee-indigos,
+        "purples":     $sabee-purples,
+        "pinks":       $sabee-pinks,
+        "reds":        $sabee-reds,
+        "oranges":     $sabee-oranges,
+        "yellows":     $sabee-yellows,
+        "greens":      $sabee-greens,
+        "teals":       $sabee-teals,
+        "cyans":       $sabee-cyans
+);
+
 
 .card[data-color] ul > li {
     text-align: center !important;
@@ -105,16 +363,33 @@ $sabee-colors: (
         --color-gray-dark-#{$colorName}: #{$colorValue};	
     }
     /* Dark theme colors */
-    @each $colorName, $colorValue in $dark-theme-colors {
+    @each $colorName, $colorValue in $dark-theme-colors-hyper {
         --color-theme-dark-#{$colorName}: #{$colorValue};	
     }
+
+    /* Color palettes - Sabee */
+    @each $colorsName, $colors in $sabeeColorList {
+
+        @each $colorName, $colorValue in $colors {
+            --color-sabee-#{$colorName}: #{$colorValue};
+        }
+    }
+
     /* Sabee theme colors */
     @each $colorName, $colorValue in $theme-colors {
         --color-sabee-theme-#{$colorName}: #{$colorValue};	
     }
+    /* Sabee dark theme colors */
+    @each $colorName, $colorValue in $dark-theme-colors {
+        --color-sabee-theme-dark-#{$colorName}: #{$colorValue};
+    }
     /* Sabee grays */
     @each $colorName, $colorValue in $sabee-grays {
         --color-sabee-gray-#{$colorName}: #{$colorValue};	
+    }
+    /* Sabee dark grays */
+    @each $colorName, $colorValue in $sabee-dark-grays {
+        --color-sabee-gray-dark-#{$colorName}: #{$colorValue};
     }
     /* Sabee colors */
     @each $colorName, $colorValue in $sabee-colors {

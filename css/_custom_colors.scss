@@ -1,32 +1,51 @@
 
 /* Custom brand colors */
 
-// brand grays gray-color-variables
-$sabee-gray-010: #f9f9fa;
-$sabee-gray-020: #ebeef0;
-$sabee-gray-030: #dde1e5;
-$sabee-gray-040: #ced4d8;
-$sabee-gray-050: #bdc5cb;
-$sabee-gray-060: #aab4bd;
-$sabee-gray-070: #95a1ac;
-$sabee-gray-080: #7b8b98;
-$sabee-gray-090: #5f6e7a;
-$sabee-gray-100: #384047;
-$sabee-gray-110: #1c242a;
-// brand grays end gray-color-variables
+$sabee-gray-100: #f9f9fa;
+$sabee-gray-200: #ebeef0;
+$sabee-gray-300: #dde1e5;
+$sabee-gray-400: #ced4d8;
+$sabee-gray-500: #95a1ac;
+$sabee-gray-600: #7b8b98;
+$sabee-gray-700: #5f6e7a;
+$sabee-gray-800: #30373D;
+$sabee-gray-900: #384047;
+// brand end gray-color-variables
+
+// ====== Dark Mode Gray Color ======== //
+// brand gray-dark-color-variables
+$sabee-gray-dark-100: #424F5B;
+$sabee-gray-dark-200: $sabee-gray-900;
+$sabee-gray-dark-300: #464f5b;
+$sabee-gray-dark-400: $sabee-gray-600;
+$sabee-gray-dark-500: #AAB4BD;
+$sabee-gray-dark-600: $sabee-gray-400;
+$sabee-gray-dark-700: $sabee-gray-300;
+$sabee-gray-dark-800: #e3eaef;
+$sabee-gray-dark-900: $sabee-gray-200;
 
 $sabee-grays: (
-    "010":     $sabee-gray-010,
-    "020":     $sabee-gray-020,
-    "030":     $sabee-gray-030,
-    "040":     $sabee-gray-040,
-    "050":     $sabee-gray-050,
-    "060":     $sabee-gray-060,
-    "070":     $sabee-gray-070,
-    "080":     $sabee-gray-080,
-    "090":     $sabee-gray-090,
     "100":     $sabee-gray-100,
-    "110":     $sabee-gray-110
+    "200":     $sabee-gray-200,
+    "300":     $sabee-gray-300,
+    "400":     $sabee-gray-400,
+    "500":     $sabee-gray-500,
+    "600":     $sabee-gray-600,
+    "700":     $sabee-gray-700,
+    "800":     $sabee-gray-800,
+    "900":     $sabee-gray-900,
+);
+
+$sabee-dark-grays: (
+        "100":     $sabee-gray-dark-100,
+        "200":     $sabee-gray-dark-200,
+        "300":     $sabee-gray-dark-300,
+        "400":     $sabee-gray-dark-400,
+        "500":     $sabee-gray-dark-500,
+        "600":     $sabee-gray-dark-600,
+        "700":     $sabee-gray-dark-700,
+        "800":     $sabee-gray-dark-800,
+        "900":     $sabee-gray-dark-900,
 );
 
 // brand color-variables
@@ -122,6 +141,17 @@ $dark-grays: (
     "700": map-get($grays, "300"),
     "800": map-get($custom-grays, "040"),
     "900": map-get($custom-grays, "030")
+);
+
+$dark-theme-colors-hyper: (
+        "primary":    $primary,
+        "secondary":  map-get($dark-grays, "600"),
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      map-get($dark-grays, "300"),
+        "dark":       map-get($dark-grays, "900")
 );
 
 

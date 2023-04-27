@@ -7,13 +7,13 @@
 // Dark Theme Color Map
 $dark-theme-colors: (
      "primary":    $primary,
-     "secondary":  map-get($dark-grays, "600"),
+     "secondary":  map-get($sabee-dark-grays, "600"),
      "success":    $success,
      "info":       $info,
      "warning":    $warning,
      "danger":     $danger,
-     "light":      map-get($dark-grays, "300"),
-     "dark":       map-get($dark-grays, "900")
+     "light":      map-get($sabee-dark-grays, "300"),
+     "dark":       map-get($sabee-dark-grays, "900")
 );
 
 // Theme Color RGB
