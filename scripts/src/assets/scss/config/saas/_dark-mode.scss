@@ -5,16 +5,17 @@
 // Dark Variable
 
 // Dark Theme Color Map
-$dark-theme-colors: (
-     "primary":    $primary,
-     "secondary":  map-get($sabee-dark-grays, "600"),
-     "success":    $success,
-     "info":       $info,
-     "warning":    $warning,
-     "danger":     $danger,
-     "light":      map-get($sabee-dark-grays, "300"),
-     "dark":       map-get($sabee-dark-grays, "900")
-);
+//$dark-theme-colors: (
+//     "primary":    $primary,
+//     "secondary":  $gray-dark-600,
+//     "success":    $success,
+//     "info":       $info,
+//     "warning":    $warning,
+//     "danger":     $danger,
+//     "light":      $gray-dark-300,
+//     "dark":       $gray-dark-900
+//);
+
 
 // Theme Color RGB
 $dark-theme-colors-rgb: map-loop($dark-theme-colors, to-rgb, "$value");
